@@ -82,10 +82,84 @@ Machine learning phases of matter
 \begin_layout Standard
 We start with Roger Melko's famous paper titled Machine learning phases
  of matter.
+ Neural networks are used to detect phases and order parameter from raw
+ confuguration data generated using Monte Caro methods.
+\end_layout
+
+\begin_layout Section
+Phase characterization (Image classification) of square-lattice Ising model
+ configurations
+\end_layout
+
+\begin_layout Subsection
+ferromagnetic
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+H=-J\sum_{\langle ij\rangle}\sigma_{i}^{z}\sigma_{j}^{z}
+\]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\emph on
+
+\begin_inset Formula $\sigma_{i}^{z}=\pm1$
+\end_inset
+
+
+\emph default
+.
+ Configurations are obtained usinf standard Monte Carlo method at various
+ temperatures.
+\end_layout
+
+\begin_layout Subsection
+Anti-ferromagnetic
+\end_layout
+
+\begin_layout Standard
+Neural networks are able to identify anti-ferromagnetic spin ordering as
+ well which would be relatively difficult task than finding global spin
+ polarization.
+\end_layout
+
+\begin_layout Subsection
+Possible generalization
+\end_layout
+
+\begin_layout Standard
+Neural networks trained on square lattice is also useful in identifying
+ phase transitions on trangular lattice?
+\end_layout
+
+\begin_layout Standard
+Question : IS it really a different scenario than square lattice?
+\end_layout
+
+\begin_layout Part*
+My contribution to this knowledge
+\end_layout
+
+\begin_layout Standard
+Nothing.
+\end_layout
+
+\begin_layout Part*
+Important questions to be answered
+\end_layout
+
+\begin_layout Enumerate
+Given it is learned on existing configurations and its labels, how do we
+ trust it when there are no labels.
+ i.e.
+ in uncharted territories?
 \end_layout
 
 \end_body
